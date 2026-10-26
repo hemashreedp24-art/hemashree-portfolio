@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemashree D P | Portfolio</title>
+  <meta name="description" content="Portfolio of Hemashree D P — a student who loves learning, curious about AI and technology.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%236366f1'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <style>
+    /* Critical loader styles inlined so the spinner is centered on the very
+       first paint — even on slow mobile connections or with a cached copy of
+       styles.css. Placed after the stylesheet link so these rules win. */
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      background: #0a0e1a;
+      visibility: visible;
+      transition: opacity 0.7s ease, visibility 0.7s ease;
+    }
+    .loader.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .loader-inner {
+      text-align: center;
+    }
+    .loader-ring {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.08);
+      border-top-color: #8b5cf6;
+      border-right-color: #ec4899;
+      animation: loader-spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes loader-spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="loader" id="loader" role="status" aria-label="Loading portfolio">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <p class="loader-name">Hemashree D P</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Hemashree<span class="logo-accent"></span>DP</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#academics" class="nav-link">Academics</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#hobbies" class="nav-link">Hobbies</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-left reveal">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="assets/photo.jpg" alt="Hemashree D P">
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-info reveal">
+            <h1 class="hero-name">Hemashree D P</h1>
+            <a class="hero-mail" href="mailto:hemashreedp24@gmail.com">hemashreedp24@gmail.com</a>
+            <p class="hero-tagline">Aspiring AI &amp; technology enthusiast who loves learning, building and exploring new ideas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-tag reveal">01 &middot; About</p>
+        <h2 class="section-title reveal">About <span class="text-gradient">Me</span></h2>
+        <div class="about-card reveal">
+          <p class="about-text">
+            Hi, I&rsquo;m Hemashree D P<br><br>
+            I&rsquo;m a student who loves learning new things.<br>
+            I&rsquo;m interested in AI and technology.<br>
+            I enjoy exploring new ideas and creating projects.<br>
+            Welcome to my website!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Details -->
+    <section class="section" id="academics">
+      <div class="container">
+        <p class="section-tag reveal">02 &middot; Academics</p>
+        <h2 class="section-title reveal">Academic <span class="text-gradient">Details</span></h2>
+        <p class="section-subtitle reveal">Three stages of my learning journey &mdash; school, pre-university and graduate studies.</p>
+        <div class="edu-grid">
+          <article class="edu-card card reveal">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <span class="edu-type">Schooling</span>
+            <h3 class="edu-institute">Holy Angel's High School</h3>
+            <p class="edu-score">Percentage <strong>93.8%</strong></p>
+          </article>
+          <article class="edu-card card reveal">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <span class="edu-type">Pre-University (PU)</span>
+            <h3 class="edu-institute">Sri Chaitanya</h3>
+            <p class="edu-score">Percentage <strong>90.5%</strong></p>
+          </article>
+          <article class="edu-card card reveal">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6"/><path d="M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <span class="edu-type">Degree (Graduate)</span>
+            <h3 class="edu-institute">RNS Institute of Technology</h3>
+            <p class="edu-score">CGPA <strong>9.5</strong></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section-tag reveal">03 &middot; Skills</p>
+        <h2 class="section-title reveal">My <span class="text-gradient">Skills</span></h2>
+        <p class="section-subtitle reveal">Technologies and concepts I&rsquo;ve been learning and working with.</p>
+        <div class="skills-grid">
+          <article class="skill-card card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="18" y1="15" x2="18" y2="21"/></svg>
+            </div>
+            <h3>Git</h3>
+            <p>Basic knowledge of version control and tracking code changes.</p>
+          </article>
+          <article class="skill-card card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M9 19c-5 1.1-5-2.4-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 14 4.77 5.07 5.07 0 0 0 14 4.77c0 3.66 3.37 7.7 8.48 11.48a13.5 13.5 0 0 0 4.5 4.5c1.2 0 2.4-.15 3.55-.42a5.64 5.64 0 0 0 2.39-4.28c-.43-.5-.8-1.05-1.11-1.66a5.95 5.95 0 0 0-1.45-1.49 6.3 6.3 0 0 1-1.55-1.03z"/><path d="M9 12h6"/></svg>
+            </div>
+            <h3>GitHub</h3>
+            <p>Learning to create repositories and manage projects online.</p>
+          </article>
+          <article class="skill-card card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>SQL</h3>
+            <p>Learning to write queries and manage databases.</p>
+          </article>
+          <article class="skill-card card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="14" y="14" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/></svg>
+            </div>
+            <h3>Python</h3>
+            <p>Understanding basic programming concepts.</p>
+          </article>
+          <article class="skill-card card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="18" rx="1"/><rect x="10" y="3" width="12" height="18" rx="1"/></svg>
+            </div>
+            <h3>HTML &amp; CSS</h3>
+            <p>Learning to create and style webpages.</p>
+          </article>
+          <article class="skill-card card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.4 1 2.3v.6h6v-.6c0-.9.4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <h3>Problem-Solving</h3>
+            <p>Interested in learning new technologies and solving problems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-tag reveal">04 &middot; Projects</p>
+        <h2 class="section-title reveal">My <span class="text-gradient">Projects</span></h2>
+        <p class="section-subtitle reveal">A few things I have built / am building.</p>
+        <div class="projects-grid">
+          <article class="project-card card reveal">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 15v3c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+            </div>
+            <h3>Smart Parking System</h3>
+            <p>A project designed to detect available parking spaces and help drivers find vacant slots easily.</p>
+          </article>
+          <article class="project-card card reveal">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.12 2.12M17.68 17.68l2.12 2.12M22 12h3M12 8v3M12 13v3M4.2 19.8l2.12-2.12M17.68 6.32l2.12-2.12"/></svg>
+            </div>
+            <h3>Automatic Street Light Control System</h3>
+            <p>A project that uses sensors to automatically control street lights based on surrounding light and movement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="section" id="hobbies">
+      <div class="container">
+        <p class="section-tag reveal">05 &middot; Hobbies</p>
+        <h2 class="section-title reveal">My <span class="text-gradient">Hobbies</span></h2>
+        <p class="section-subtitle reveal">Things I love doing when I&rsquo;m not coding.</p>
+        <div class="hobbies-grid">
+          <article class="hobby-card card reveal">
+            <div class="hobby-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Playing Badminton</h3>
+          </article>
+          <article class="hobby-card card reveal">
+            <div class="hobby-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h3>Listening to Songs</h3>
+          </article>
+          <article class="hobby-card card reveal">
+            <div class="hobby-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2l3.09 6.26L22 9l-5 5.91L5 22l3.09-6.26L2 16l5-5.91z"/></svg>
+            </div>
+            <h3>Making Art</h3>
+          </article>
+          <article class="hobby-card card reveal">
+            <div class="hobby-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M15 14h4a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v7"/><path d="M9 2H9a2 2 0 0 0-2 2v8a2 2 0 0 0 4 0V2z"/></svg>
+            </div>
+            <h3>Cooking</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="section-tag reveal">06 &middot; Contact</p>
+        <h2 class="section-title reveal">Get In <span class="text-gradient">Touch</span></h2>
+        <p class="section-subtitle reveal">Have a question, a project idea or just want to say hi? My inbox is open.</p>
+        <div class="contact-grid">
+          <a class="contact-card card reveal" href="mailto:hemashreedp24@gmail.com">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            </div>
+            <h3>Email</h3>
+            <p>hemashreedp24@gmail.com</p>
+          </a>
+          <a class="contact-card card reveal" href="https://github.com/Hemashree D P">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.1-5-2.4-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 14 4.77 5.07 5.07 0 0 0 14 4.77c0 3.66 3.37 7.7 8.48 11.48a13.5 13.5 0 0 0 4.5 4.5c1.2 0 2.4-.15 3.55-.42a5.64 5.64 0 0 0 2.39-4.28c-.43-.5-.8-1.05-1.11-1.66a5.95 5.95 0 0 0-1.45-1.49 6.3 6.3 0 0 1-1.55-1.03z"/><path d="M9 12h6"/></svg>
+            </div>
+            <h3>GitHub</h3>
+            <p>github.com/Hemashree D P</p>
+          </a>
+          <a class="contact-card card reveal" href="https://linkedin.com/in/Hemashree D P">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="20" height="11" rx="2"/><path d="M16 8V7a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v1"/></svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/Hemashree D P</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Hemashree D P All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
